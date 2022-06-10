@@ -1,8 +1,4 @@
 # Explorer
-bot for boating
+A bot designed to make pathing through oceans so much easier
 
-
-
-this is a test
-
-shrimp
+Currently a work-in-progress. A working version will be up soon (hopefully)
