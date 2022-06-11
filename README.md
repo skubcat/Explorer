@@ -16,6 +16,8 @@ Complex routes via "waypoints" set by the user. This allows the bot to travel mo
 
 Land-mode. Traveling through cities and whatnot.
 
+Rail-mode. Allowing the bot to travel through rail systems automatically including the use of /dest
+
 Dynamically switch from boating to walking.
 
 Logging any issues it encounters.
