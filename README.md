@@ -13,6 +13,7 @@ The current version has several known issues, as well as a few unknown. We are w
 # TO USE:
 
 If, for whatever reason, you are using the early bot, this is how you do so:
+
 1: Install JSMacros.
 
 2: Install Explorer.
