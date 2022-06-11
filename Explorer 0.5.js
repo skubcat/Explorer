@@ -1,4 +1,3 @@
-let Vec3 = require('vec3').Vec3; // Currently unused, remove if this isnt used
 let user = Player.getPlayer()   // typing "Player.getPlayer() is not fun.
 if (user.getVehicle() == null)
    Chat.log("WARNING: Bot currently requires a boat before using") // warns against not being in a boat, which currently has no error detection.
