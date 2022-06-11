@@ -14,9 +14,13 @@ The current version has several known issues, as well as a few unknown. We are w
 
 If, for whatever reason, you are using the early bot, this is how you do so:
 1: Install JSMacros.
+
 2: Install Explorer.
+
 3: Launch Minecraft with JSMacros.
+
 4: Open the config folder for JSMAcros.
+
 5: Place Explorer in the "Macros" folder inside the config.
 
 After you do this, to actually use the bot, check with JSMacros for how to set up a keybind for a script. The UI is not very intuitive but it should be
