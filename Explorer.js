@@ -69,12 +69,14 @@ class moveOrder {
     }
 }
 /*
+Heres an example of creating a move order queue.
+
 pavia = new moveOrder();
 pavia.add({x: 50, z: 50})
 pavia.add({x: 95, z: 45})
 pavia.add({x: 200, z: 450})
 
-Heres an example of creating a move order queue.
+
 */
 function startOrder(orderName) {
 while (boatPos.x && boatPos.z !== orderName.stack[0]) {
