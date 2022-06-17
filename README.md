@@ -53,7 +53,3 @@ Rail-mode. Allowing the bot to travel through rail systems automatically includi
 Dynamically switch from boating to walking.
 
 Logging any issues it encounters.
-
-Actual tutorial on how to use
-
-And more (coming soon)
