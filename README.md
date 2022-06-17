@@ -40,7 +40,8 @@ a.add({x: 200, z: 450})
 ```
 Afterwards use the ```startOrder``` function to begin the loop. WARNING: It can't walk backwards
 through coordinates at the moment. A -> B is different from B -> A. 
-```startOrder(pavia)```
+Example: 
+```startOrder(a)```
 
 Chat usage is not implented, this is *currently* the only way to move the bot.
 
