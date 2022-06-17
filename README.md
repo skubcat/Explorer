@@ -29,17 +29,18 @@ simple enough to do so.
 
 
 To make a move order, edit Explorer.js after placing it in your JSmacros/macros folder.
-Then, create a new move order with the constructor ```javascript newmoveOrder();```
+Then, create a new move order with the constructor ```newmoveOrder();```
 
 Heres an example of creating a move order queue.
+```
 a = new moveOrder();
 a.add({x: 50, z: 50})
 a.add({x: 95, z: 45})
 a.add({x: 200, z: 450})
-
-Afterwards use the startOrder function to begin the loop. WARNGING: It can't walk backwards
+```
+Afterwards use the ```startOrder``` function to begin the loop. WARNGING: It can't walk backwards
 through coordinates at the moment. A -> B is different from B -> A. 
-startOrder(pavia)
+```startOrder(pavia)```
 
 Chat usage is not implented, this is *currently* the only way to move the bot.
 
