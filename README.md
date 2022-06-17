@@ -38,7 +38,7 @@ a.add({x: 50, z: 50})
 a.add({x: 95, z: 45})
 a.add({x: 200, z: 450})
 ```
-Afterwards use the ```startOrder``` function to begin the loop. WARNGING: It can't walk backwards
+Afterwards use the ```startOrder``` function to begin the loop. WARNING: It can't walk backwards
 through coordinates at the moment. A -> B is different from B -> A. 
 ```startOrder(pavia)```
 
