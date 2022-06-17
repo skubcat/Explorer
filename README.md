@@ -38,8 +38,6 @@ This bot is currently not ideal for river travel, as the quick direction changes
 
 Complex routes via "waypoints" set by the user. This allows the bot to travel more complex routes by traveling through known good paths. (Implented, search algorithm for nodes on the way.)
 
-Land-mode. Traveling through cities and whatnot.
-
 Rail-mode. Allowing the bot to travel through rail systems automatically including the use of /dest
 
 Dynamically switch from boating to walking.
