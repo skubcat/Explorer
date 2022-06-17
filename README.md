@@ -10,7 +10,7 @@ Version 0.5 is now (somewhat) released!
 The current version has several known issues, as well as a few unknown. We are working on all of them (trust us, we know)
 
 
-# TO USE:
+# USAGE:
 
 If, for whatever reason, you are using the early bot, this is how you do so:
 
@@ -27,12 +27,21 @@ If, for whatever reason, you are using the early bot, this is how you do so:
 After you do this, to actually use the bot, check with JSMacros for how to set up a keybind for a script. The UI is not very intuitive but it should be
 simple enough to do so.
 
-To change destinations, enter into the config and find the X,Z values on line 8. Change these values to whatever you want.
-*WARNING: You are responsible for any deaths, as the bot cannot see any players or traps or otherwise. It is up to you to set a known good path!*
-The bot cannot pathfind around islands or obstacles, you must set the coordiantes yourself (at the moment).
-This bot is currently not ideal for river travel, as the quick direction changes cause the bot to struggle.
 
+To make a move order, edit Explorer.js after placing it in your JSmacros/macros folder.
+Then, create a new move order with the constructor new MoveOrder();
 
+Heres an example of creating a move order queue.
+a = new moveOrder();
+a.add({x: 50, z: 50})
+a.add({x: 95, z: 45})
+a.add({x: 200, z: 450})
+
+Afterwards use the startOrder function to begin the loop. WARNGING: It can't walk backwards
+through coordinates at the moment. A -> B is different from B -> A. 
+startOrder(pavia)
+
+Chat usage is not implented, this is *currently* the only way to move the bot.
 
 # Planned features:
 
