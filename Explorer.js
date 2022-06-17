@@ -35,7 +35,7 @@ function right(){
     Client.waitTick(1)                                
     KeyBind.keyBind("key.right",false)
 }
-function move(coordinates){
+function move(orderName, coordinates){
       while (Math.abs(boatPos.x-coordinates.x) >= destTolerance || Math.abs(boatPos.z - coordinates.z) >= destTolerance) {
         KeyBind.keyBind("key.forward",true)
         boatPos = {x:user.getVehicle().getX(), z:user.getVehicle().getZ()}
@@ -43,8 +43,47 @@ function move(coordinates){
         boatAngle = user.getVehicle().getYaw()
         if (boatAngle < 0) boatAngle = 360 + boatAngle;
         if (Math.abs(boatAngle - desiredAngle) >= 5) (boatAngle - desiredAngle+360)%360>180 ? right() : left() // haha funny numbers go BRRR. main logic for boat rotation.
-        Client.waitTick(1)
+        Client.waitTick(1) // for some strange reason, if this is not here, the game crashes. DONT MODIFY THIS!
+	      	
           }
     KeyBind.keyBind("key.forward",false)
+    orderName.next();
 }
-move(destinationPos)
+
+
+
+class moveOrder {
+    constructor() {
+        this.stack = [];
+    }
+    add(element) {
+        this.stack.push(element)
+    }
+
+    next() {
+        this.stack.shift();
+    }
+    
+    front() {
+        this.stack[1]
+    }
+}
+/*
+pavia = new moveOrder();
+pavia.add({x: 50, z: 50})
+pavia.add({x: 95, z: 45})
+pavia.add({x: 200, z: 450})
+
+Heres an example of creating a move order queue.
+*/
+function startOrder(orderName) {
+while (boatPos.x && boatPos.z !== orderName.stack[0]) {
+	move(orderName, orderName.stack[0])
+	}
+}
+
+/*
+Use the startOrder function to begin the loop. WARNGING: It can't walk backwards
+through coordinates at the moment. A -> B is different from B -> A. 
+startOrder(pavia)
+*/
