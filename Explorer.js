@@ -39,11 +39,11 @@ function move(coordinates){
       while (Math.abs(boatPos.x-coordinates.x) >= destTolerance || Math.abs(boatPos.z - coordinates.z) >= destTolerance) {
         KeyBind.keyBind("key.forward",true)
         boatPos = {x:user.getVehicle().getX(), z:user.getVehicle().getZ()}
-        desiredAngle = vecToAngle(boatPos.x, boatPos.z, destinationPos.x, destinationPos.z)
+        desiredAngle = vecToAngle(boatPos.x, boatPos.z, coordinates.x, coordinates.z)
         boatAngle = user.getVehicle().getYaw()
         if (boatAngle < 0) boatAngle = 360 + boatAngle;
         if (Math.abs(boatAngle - desiredAngle) >= 5) (boatAngle - desiredAngle+360)%360>180 ? right() : left() // haha funny numbers go BRRR. main logic for boat rotation.
-        Client.waitTick(1) // for some strange reason, if this is not here, the game crashes. DONT MODIFY THIS!
+        Client.waitTick(1)
           }
     KeyBind.keyBind("key.forward",false)
 }
