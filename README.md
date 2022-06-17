@@ -31,12 +31,12 @@ To change destinations, enter into the config and find the X,Z values on line 8.
 *WARNING: You are responsible for any deaths, as the bot cannot see any players or traps or otherwise. It is up to you to set a known good path!*
 The bot cannot pathfind around islands or obstacles, you must set the coordiantes yourself (at the moment).
 This bot is currently not ideal for river travel, as the quick direction changes cause the bot to struggle.
-Future updates will allow you to set a custom path for the bot to follow, so stay up-to-date.
+
 
 
 # Planned features:
 
-Complex routes via "waypoints" set by the user. This allows the bot to travel more complex routes by traveling through known good paths.
+Complex routes via "waypoints" set by the user. This allows the bot to travel more complex routes by traveling through known good paths. (Implented, search algorithm for nodes on the way.)
 
 Land-mode. Traveling through cities and whatnot.
 
