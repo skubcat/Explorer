@@ -29,7 +29,7 @@ simple enough to do so.
 
 
 To make a move order, edit Explorer.js after placing it in your JSmacros/macros folder.
-Then, create a new move order with the constructor new MoveOrder();
+Then, create a new move order with the constructor ```javascript newmoveOrder();```
 
 Heres an example of creating a move order queue.
 a = new moveOrder();
