@@ -49,7 +49,7 @@ function move(orderName, coordinates) {
 
 
 
-class moveOrder {
+class MoveOrder {
     constructor() {
         this.stack = [];
     }
