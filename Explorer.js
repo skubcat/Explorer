@@ -4,9 +4,7 @@ if (user.getVehicle() == null)
 
 let boatPos = { x: user.getVehicle().getX(), z: user.getVehicle().getZ() } // After warning, init boat values
 
-//======================\\
 let destinationPos = { x: 0, z: 0 }  // set your destination here. this will be replaced later with a GUI
-//======================//
 
 let boatAngle = user.getVehicle().getYaw()
 if (boatAngle < 0) boatAngle = 360 + boatAngle;
