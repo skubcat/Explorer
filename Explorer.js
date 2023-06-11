@@ -65,10 +65,10 @@ class MoveOrder {
         this.stack[1]
     }
 }
-/*
-Heres an example of creating a move order queue.
 
-pavia = new moveOrder();
+//Heres an example of creating a move order queue.
+/*
+pavia = new MoveOrder();
 pavia.add({x: 50, z: 50})
 pavia.add({x: 95, z: 45})
 pavia.add({x: 200, z: 450})
